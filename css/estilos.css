@@ -192,6 +192,9 @@ article{
     --whatsapp: #25d366;
     --mail:#4357ad;
 }
+.redes-container{
+    display:inline-block;
+}
 .redes-container ul li{
     display: inline-block;
     margin:0.3em;
@@ -227,7 +230,7 @@ article{
     filter:none;
 }
 #ij{/*tamaño icono InfoJobs*/
-    height: 17px; 
+    height: 17px;
 }
 .redes-container ul li #linkedin:hover,#linkedin:active{
     background: var(--linkedin);
