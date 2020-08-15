@@ -169,7 +169,7 @@ ul li{
     margin-bottom: 0.5em;
 }
 #foto{
-    width: 300px;
+    width: 18em;
     margin-top: 10px;
 }
 article{
@@ -191,9 +191,6 @@ article{
     --linkedin: #0077B5;
     --whatsapp: #25d366;
     --mail:#4357ad;
-}
-.redes-container{
-    
 }
 .redes-container ul li{
     display: inline-block;
@@ -249,9 +246,10 @@ footer{
     text-align: center;
 }
 /* Desde tablet horizontal y PC*/
+
 @media (min-width: 500px){
     section{
-        width: 90%;
+        width: 70%;
     } 
 }
 @media (min-width: 750px) {
