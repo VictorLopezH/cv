@@ -10,7 +10,7 @@ body{
     font-size: 16px;
     padding-top: 16px;/*Margen del menu*/
 }
-/*menu*/
+/* MENU --------------------------------------------------*/
 header{
     background: #4357ad;
     position: fixed;
@@ -34,7 +34,6 @@ nav{
     padding:1em;
     text-align: center;
     font-size:1em;
-    
     margin-right: 3em;
 }
 .menu .llamar:hover{
@@ -53,7 +52,6 @@ nav{
     padding:1em;
     text-align: center;
     font-size:1em;
-    
 }
 .menu .descargar:hover{
     background: #f2f2f2;
@@ -90,7 +88,7 @@ section{
     padding-bottom: 50px;
 }
 
-/*Efectos del Menu*/
+/* EFECTOS DEL MENU -----------------------------------------*/
 .headroom{
     transition: transform .3s ease;
 }
@@ -100,7 +98,7 @@ section{
 .headroom--unpinned{
     transform: translateY(-100%);
 }
-/*Contenido*/
+/* CONENIDO -------------------------------------------------*/
 
 h1{
     font-family: 'Times New Roman', Times, serif;
@@ -156,14 +154,18 @@ h6{
     font-size: 16px;
     margin-bottom: 1em;
 }
-
+#datos {
+    width: 300px;
+}
 #datos .titulo_datos{
- 
  color: #4357ad;
+ margin-right: 0.5em;
+ margin-top: -10%;
 }
-#datos #nacimiento{
-    margin-left: 5.7em;
-}
+th, td {
+    text-align: left;
+    vertical-align: top;
+ }
 ul li{
     list-style-type: none;
     margin-bottom: 0.5em;
@@ -185,7 +187,7 @@ article{
     margin-right: 0.5em;
     font-size: 16px;
 }
-/*Iconos redes sociales*/
+/* ICONOS REDES SOCIALES -------------------------------------*/
 :root{
     --infojobs: #167DB7;
     --linkedin: #0077B5;
@@ -244,24 +246,45 @@ article{
 .redes-container ul li #mail:hover,#mail:active{
     background: var(--mail);
 }
+
+/* LEER MÁS TOGGLE ---------------------------------------*/
+#readMore{
+    display: none;
+}
+#readmore-button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #333f;
+    background: #fff;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #333;
+    
+  }  
+#readmore-button:hover{
+    color: #333;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 2px 0 #333;
+  }
+  #readmore-button:active{
+    color: #333;
+    background: #f2f2f2;
+    box-shadow: inset 0 0 2px 0 #333;
+  }
+.icono-readmore{
+      margin-left: 0.5em; 
+  }
+/*-------------------------------------------------------*/
 footer{
     margin-top: 100px;
     text-align: center;
 }
 /* Desde tablet horizontal y PC*/
-
-@media (min-width: 300px){ 
-    #foto{
-        width: 285px;
-    }
-}
 @media (min-width: 500px){
     section{
         width: 70%;
     } 
-    #foto{
-        width: 285px;
-    }
 }
 @media (min-width: 750px) {
     section{
@@ -270,13 +293,10 @@ footer{
     
     #datos{
         position: fixed;
-        width: 40%;
+        /*width: 40%;*/
     }
     #contenido{
         padding-left: 360px;
-    }
-    #foto{
-        width: 285px;
     }
 }
 
