@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /*Quita los estilos por defecto*/
 *{
     margin: 0;
@@ -102,7 +103,7 @@ section{
 /* CONENIDO -------------------------------------------------*/
 
 h1{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display' ,'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: 35px;
     margin-top: 0.5em;
