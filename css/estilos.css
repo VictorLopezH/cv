@@ -299,7 +299,9 @@ footer{
 /*AJUSTES PARA PANTALLAS DE TABLET O PC*/
 /*Firstmobile design*/
 
-/*Ajustes con pantalla vertical reducida*/
+/*Ajustes con pantalla vertical reducida
+Tablets en horizontal
+*/
 @media (max-height:715px) and (min-width: 850px){
     section{
         width: 70%;
@@ -311,8 +313,8 @@ footer{
         width: 100%;
     }
     #foto{
-        width: 200px; 
-        height: 250px;
+        width: 210px; 
+        height: 260px;
         float:left;
     }
     #texto-colum {
