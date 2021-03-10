@@ -3,6 +3,8 @@
     padding: 0;
 }
 body{
+    width: 100%;
+    margin: 0px;
     background:rgb(235, 233, 233);
     color:black;
     font-family: 'Roboto', sans-serif; 
