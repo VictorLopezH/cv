@@ -223,17 +223,18 @@ body{
     #mifoto{
         grid-column: 2/8;
     }
+    #foto{
+        width: 300px;
+        height: 310px;
+        margin-right: 0;
+    }
     
  }
  @media screen and (max-width: 800px) and (max-height: 850px){
      .context{
         grid-template-rows:  minmax(10%, 1fr) 2fr 2fr 2fr 2fr;
      }
-    #foto{
-            width: 300px;
-            height: 310px;
-            margin-right: 0;
-        }
+    
  }
  
  /* Animacion de revelar */
