@@ -112,7 +112,7 @@ body{
     object-fit: contain;
     z-index: 5; 
     
-    bottom: -4px;
+    bottom: 0;
     clear: both;
     margin-top: 0px;
     padding-top: 0px;
