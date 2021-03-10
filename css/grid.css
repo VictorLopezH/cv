@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(235, 233, 233);
+    color:black;
+    font-family: 'Roboto', sans-serif; 
+    overflow-x: hidden;/* Oculta scroll horzontal */
+}
+.contenedor{
+    width: 100%;
+    margin: 0px;
+    display:grid;
+    grid-gap:60px;
+    grid-template-columns: minmax(10%, 1fr) 2fr 2fr 2fr 2fr 2fr 2fr minmax(10%, 1fr);
+    /* 5 filas */
+    grid-template-rows: minmax(5rem, max-content) minmax(calc(100vh - 4rem - 200px), max-content) 
+    minmax(10rem, max-content) minmax(10rem, max-content) minmax(10rem, max-content)  minmax(10rem, max-content);
+
+    grid-template-areas:"header header header header header header header header"
+                        "contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido"
+                        ". widget-1 widget-1 widget-1 widget-2 widget-2 widget-2 ."
+                        "widget-3 widget-3 widget-3 widget-3 widget-3 widget-3 widget-3 widget-3"
+                        "contacto contacto contacto contacto contacto contacto contacto contacto"
+                        "footer footer footer footer footer footer footer footer";
+}
+
+.contenedor .header{
+    
+    color: #fff;
+    grid-area: header;
+}
+.contenedor .contenedorContenido, 
+.contenedor .widget-3, 
+.contenedor .contacto{
+    background: #fafbff;
+    box-shadow: 0 0 15px #ddd;
+}
+.contenedor .contenedorContenido{
+    grid-area: contenedorContenido;
+    display: grid;
+    grid-template-columns: minmax(10%, 1fr) 2fr 2fr 2fr 2fr 2fr 2fr minmax(10%, 1fr);
+    grid-gap:60px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.contenedor .contenedorContenido .contenido{
+    grid-column: 4/8;
+    grid-row: 1/2;
+}
+.contenedor .contenedorContenido .sidebar{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background: #fafbff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ddd;
+}
+.contenedor .widget-1{
+    grid-area: widget-1;
+}
+.contenedor .widget-2{
+    grid-area: widget-2;
+}
+.contenedor .widget-3{
+    grid-area: widget-3;
+    background: #fafbff;
+    /* box-shadow: 0 5px 25px rgba(1 1 1 / 15%); */
+}
+.contenedor .contacto{
+    grid-area: contacto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.contenedor .contacto .contenidoContacto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 60px;
+    
+}
+.contenedor .footer{
+    grid-area: footer;
+}
+/*-----------------------------------*/
+.context{
+    display: grid;
+    grid-template-columns: minmax(10%, 1fr) 2fr 2fr 2fr 2fr 2fr 2fr minmax(10%, 1fr);
+    grid-template-rows:  2fr 2fr 2fr 2fr 2fr;
+    grid-gap:60px;
+    margin-top: -20px;
+}
+#mifoto{
+    grid-column: 5/8;
+    grid-row: 2/6;
+
+}
+#foto{
+    width: 580px;
+    height: 600px;
+    object-fit: contain;
+    z-index: 5; 
+    
+    bottom: -4px;
+    clear: both;
+    margin-top: 0px;
+    padding-top: 0px;
+    /*Fija la imagen abajo*/
+    position: absolute;
+}
+#textoHeader{
+    grid-column: 2/6;
+    grid-row: 2/5;
+    z-index: 10;
+    font-size: 19px;
+    
+}
+
+
+@media screen and (max-width: 1300px){
+    /* Reducimos margenes */
+    .contenedor{
+        grid-template-columns: 1px 2fr 2fr 2fr 2fr 2fr 2fr 1px;
+    }
+    .contenedor .contenedorContenido{
+        grid-template-columns: 1px 2fr 2fr 2fr 2fr 2fr 2fr 1px;
+    }
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    #mifoto{
+        grid-column: 4/8;
+        right: 0;
+    }
+ } 
+ @media screen and (max-width: 1050px){
+    .contenedor{
+        grid-template-columns: 1px 2fr 2fr 2fr 2fr 1px;
+        
+        grid-template-areas:"header header header header header header"
+                        "contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido"
+                        ". widget-1 widget-1 widget-2 widget-2 ."
+                        "widget-3 widget-3 widget-3 widget-3 widget-3 widget-3"
+                        "contacto contacto contacto contacto contacto contacto"
+                        "footer footer footer footer footer footer";
+    }
+    .contenedor .contenedorContenido{
+        grid-template-columns: 1px 2fr 2fr 2fr 2fr 1px;
+    }
+    .contenedor .contenedorContenido .contenido{
+        grid-column: 4/6;
+    }
+    .contenedor .contenedorContenido .sidebar{
+        grid-column: 2/4;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.8em;
+    }
+    
+ }
+ @media screen and (max-width: 800px){
+     body{
+        overflow-x: hidden;/*Quita barras horizontales*/
+     }
+    .contenedor{
+        grid-gap: 10px;
+        /* 6 filas */
+        grid-template-rows: minmax(5rem, max-content) minmax(calc(100vh - 4rem - 200px), max-content) 
+        minmax(10rem, max-content) minmax(10rem, max-content)  minmax(10rem, max-content) minmax(10rem, max-content);
+
+        grid-template-areas:"header header header header header header"
+                        "contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido contenedorContenido"
+                        ". widget-1 widget-1 widget-1 widget-1 ."
+                        ". widget-2 widget-2 widget-2 widget-2 ."
+                        "widget-3 widget-3 widget-3 widget-3 widget-3 widget-3"
+                        "contacto contacto contacto contacto contacto contacto"
+                        "footer footer footer footer footer footer";
+    }
+    .contenedor .contenedorContenido{
+        grid-gap: 30px;
+    }
+    .contenedor .contenedorContenido .contenido{
+        grid-column: 2/6;
+        grid-row: 1/2;
+    }
+    .contenedor .contenedorContenido .sidebar{
+        grid-column: 2/6;
+        grid-row: 2/3;
+    }
+    .context{
+        grid-template-columns: minmax(10%, 1fr) 2fr 2fr 2fr 2fr 2fr 2fr minmax(10%, 1fr);
+        grid-template-rows:  2fr 2fr 2fr 2fr 2fr;
+        grid-gap:10px;
+        width: 100%;
+        
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.5em;
+    }
+    #textoHeader{
+        grid-column: 2/8; 
+    }
+    #mifoto{
+        grid-column: 2/8;
+    }
+    
+ }
+ /* Animacion de revelar */
+ .animacionRevelar{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+  }
+
+  .animacionRevelar.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+/* Fin Animacion de revelar */

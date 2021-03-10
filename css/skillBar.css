@@ -1,0 +1,74 @@
+
+.contenedorBarras{
+    margin-bottom: 10%;
+}
+.contenedorBarras h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+}
+.barra{
+    width: 50%;
+    background-color: #D2D7D3;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.word {
+    animation: word ease 5s forwards;
+}
+.excel {
+    animation: excel 5s forwards;
+}
+.outlook{
+    animation: outlook 5s forwards;
+}
+.indesign{
+    animation: indesign 5s forwards;
+}
+.espanol {
+    animation: espanol 5s forwards;
+}
+.catalan{
+    animation: catalan 5s forwards;
+}
+.ingles{
+    animation: ingles 5s forwards;
+}
+@keyframes word {
+    from {width: 0%;}
+    to {width: 70%; background-color: #4357ad;} 
+}
+@keyframes excel {
+    from {width: 0%;}
+    to {width: 50%; background-color: #4357ad;} 
+}
+@keyframes outlook {
+    from {width: 0%;}
+    to {width: 80%; background-color: #4357ad;} 
+}
+@keyframes indesign {
+    from {width: 0%;}
+    to {width: 60%; background-color: #4357ad;} 
+}
+@keyframes espanol {
+    from {width: 0%;}
+    to {width: 80%; background-color: #4357ad;} 
+}
+@keyframes catalan {
+    from {width: 0%;}
+    to {width: 80%; background-color: #4357ad;} 
+}
+@keyframes ingles {
+    from {width: 0%;}
+    to {width: 50%; background-color: #4357ad;} 
+}

@@ -1,178 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Víctor López Hoyo</title>
-        <meta charset="UTF-8">
-         
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="Víctor" content="Currículum de Víctor">
-        <link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet" type="text/css"/> 
-        <link href="css/estilos.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="img/cv.svg" />
-    </head>
-    <body>
-        <header id="header">
-            <nav class="menu"> 
-                <a class="llamar" href="tel:+34691474758" ><i class=" icono fas fa-phone fa-lg"></i>Llamar</a>
-                <a class="descargar" href="download/Víctor López.pdf" target="_blank"><i class="icono fas fa-file-download fa-lg"></i>Descargar CV</a>   
-            </nav>
-        </header>
-        <section>
-            <article id=datos>    
-                <img id="foto" src="img/foto.png" alt="Foto carnet">
-                <div id="texto-colum">
-                    <h1>Víctor <strong>López Hoyo</strong></h1>
+<head>
+    <title>Víctor López</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cv.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/hamburguesa.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/referencias.css">
+    <link rel="stylesheet" href="css/skillBar.css">
+    <link rel="stylesheet" href="css/botonSubir.css">
+    <link rel="stylesheet" href="css/estilosFondoHeader.css">
+</head>
+<body>
+    <!-- Inicio Menú navegación -->
+    <nav id="menu">
+        <img src="" alt="">
+        <!-- <a href="#" id="logo" class="brand">CV</a> -->
+        <img id="logo" class="brand" src="img/cv.png" alt="">
+        <div id="hamburguesa" class="menu-btn">
+            <button>
+                <span class="top-line"></span>
+                <span class="middle-line"></span>
+                <span class="bottom-line"></span>
+            </button>
+        </div>
+        <div class="navigation">
+            <a class="cerrarHamburguesa" href="#header">Inicio</a>
+            <a class="cerrarHamburguesa" href="#contenido">Currículum</a>
+            <a class="cerrarHamburguesa" href="#referencias">Referencias</a>
+            <a class="cerrarHamburguesa" href="#contacto">Contacto</a>
+            <a class="descargar cerrarHamburguesa" href="download/Víctor López.pdf" target="_blank"><i class="icono fas fa-file-download fa-lg"></i>Descargar CV</a>
+        </div>
+          
+    </nav>
+    <!-- Fin Menú navegación -->
+    <div class="contenedor">
+        <!-- Inicio Cabecera -->
+        <header class="header">
+            <a name="header"></a>
+            <div class="context">
+                <div id="textoHeader">
+                    <h1>Víctor <strong>López</strong></h1>
                     <h2>Operario</h2>
-                        <table>
-                            <tr>
-                                <th><strong class="titulo_datos">Nacimiento: </strong></th>
-                                <td>4 Septiembre, 1988 <p>Martorell (Barcelona)</p></td>   
-                            </tr>
-                        </table>
-                        <table>
-                            <tr>
-                                <th><i class="icono-datos fas fa-home fa-lg"></i></th>
-                                <td> Calle Alcántara, 6 Barcelona, 08042</td>
-                            </tr>
-                            <tr>
-                                <th><i class=" icono-datos fas fa-phone fa-lg"></i></th>
-                                <td id="telefono">691 474 758</td>
-                            </tr>
-                        </table>
-                        <div class="redes-container">
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/victorlh" id="linkedin" target="_blank" title="Perfil de Linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-                                <li><a href="http://www.infojobs.net/victor-lopez-hoyo.prf" id="infojobs" target="_blank" title="Perfil de InfoJobs"><img src="img/ij.svg" id="ij"/></a></li>
-                                <li><a href="https://api.whatsapp.com/send?phone=34691474758" id="whatsapp" target="_blank" title="Enviar un Whatsapp"><i class="fab fa-whatsapp fa-lg"></i></a></li>
-                                <li><a href="mailto:vicoslc@hotmail.com" id="mail" title="Enviar un e-mail"><i class="far fa-envelope fa-lg"></i></a></li>
-                            </ul>
-                        </div>
-                </div>     
-            </article>
-            <div id=contenido>     
-                <article>   
-                    <h3 id="experiencia">Experiencia</h3>
-                        <h4>Operario de lavandería y limpieza en gimnasio Dir</h4>
-                            <h5>Clubs Dir</h5>
-                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Barcelona capital</p>
-                                <h6><i class="icono far fa-calendar-alt fa-lg"></i>28 oct. de 2019 - actualidad</h6>
+                    <br>
+                    <p>En constante superación personal,</p> 
+                    <p>trabajador y siempre con buena actitud. </p>
+                    <a href="#contenido" id="sabermas"> Saber más </a>
+                </div>
+                <div id="mifoto">
+                    <img id="foto" src="img/foto.png" alt="Foto carnet"> 
+                </div>
+                
+            </div>
+            <div class="area" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+            </div >
+        </header>
+        <!-- Fin cabecera -->
+        <!-- Inicio del contenedorContenido- incluye sidebar(izquierda) y contenido(derecha)-->
+        <div class="contenedorContenido animacionRevelar">
+            <!-- Inicio Contenido Principal - main -->
+            <main class="contenido">
+                <a name="contenido"></a>
+                <h3 id="experiencia">Experiencia</h3>
+                    <h4>Operario de lavandería y limpieza en gimnasio Dir</h4>
+                        <h5>Clubs Dir</h5>
+                            <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Barcelona capital</p>
+                            <h6><i class="icono far fa-calendar-alt fa-lg"></i>28 oct. de 2019 - actualidad</h6>
+                                <ul>
+                                    <li>Lavado de toallas en lavandería.</li>
+                                    <li>Lavado de ropa de clientes. </li>
+                                    <li>Recargado de maquinas expendedoras de toallas.</li>
+                                    <li>Limpieza de las maquinas de gimnasio.</li>
+                                    <li>Limpieza de vestuarios, taquillas y duchas.</li>
+                                    <li>Limpieza de sala fitness, spinning, yoga, pilates, fisio, bootcamp. </li>
+                                    <li>Limpieza de aseos.</li>
+                                    <li>Colocación de hamacas.</li>
+                                    <li>Limpieza de piscina.</li>
+                                </ul>
+                    
+                    <h4>Operario de limpieza en SEAT</h4>
+                        <h5>Claro Sol</h5>
+                            <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
+                            <h6><i class="icono far fa-calendar-alt fa-lg"></i>1 jul. de 2018 - 8 oct. de 2019 </h6>
+                        <h5>Acciona</h5>
+                            <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
+                            <h6>
+                                <ul>
+                                    <li><i class="icono far fa-calendar-alt fa-lg"></i>16 sept. de 2017 - 30 jun. de 2018</li>
+                                    <li><i class="icono far fa-calendar-alt fa-lg"></i>7 ago. - 25 ago. de 2017</li>
+                                </ul>
+                            </h6>
+                                <ul>
+                                    <li>Limpieza de aseos, vestíbulos e instalaciones.</li>
+                                    <li>Limpieza de oficinas.</li>
+                                    <li>Limpieza de cristales.</li>
+                                    <li>Limpieza técnica de maquinaria industrial.</li>
+                                    <li>Conducción de Fregadora. </li>
+                                    <li>Limpieza industrial de hornos de cera.</li>
+                                    <li>Limpieza de paredes en altura con arnés.</li>
+                                </ul>
+                
+                    <h4>Mozo de almacén de automoción</h4>
+                        <h5>Schnellecke</h5>
+                            <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras </p>
+                            <h6><i class="icono far fa-calendar-alt fa-lg"></i>3 jul. - 28 jul. de 2017</h6>
+                                <ul>
+                                    <li>Revisión del código del producto.</li>
+                                    <li>Revisión y colocación de piezas de automoción en cajas y palés. </li>
+                                </ul>
+                    <h4>Mozo de almacén de cocina en SEAT</h4>
+                        <h5>Serunion</h5>
+                            <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
+                            <h6><i class="icono far fa-calendar-alt fa-lg"></i>10 may. - 31 dic. de 2016 </h6>
+                                <ul>
+                                    <li>Recibir el genero de los proveedores.</li>
+                                    <li>Control de albaranes.</li>
+                                    <li>Controlar las fechas de caducidad.</li>
+                                    <li>Organización y limpieza del almacén y de las cámaras de frío.</li>
+                                    <li>Dotar a los cocineros de la materia prima.</li>
+                                    <li>Elaboración de inventario.</li>
+                                </ul>
+                    <!-- Zona de texto oculta -->
+                    <span id="readMore">
+                        <h4>Manipulador de alimentos de fruta</h4>
+                            <h5>Nice Fruit</h5>
+                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Castellbisbal</p>
+                                <h6>
                                     <ul>
-                                        <li>Lavado de toallas en lavandería.</li>
-                                        <li>Recargado de maquinas expendedoras de toallas.</li>
-                                        <li>Limpieza de las maquinas de gimnasio.</li>
-                                        <li>Limpieza de vestuarios, taquillas y duchas.</li>
-                                        <li>Limpieza de sala fitness, spinning, yoga, pilates, fisio, bootcamp. </li>
-                                        <li>Limpieza de aseos.</li>
-                                        <li>Colocación de hamacas.</li>
-                                        <li>Limpieza de piscina.</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>30 mar.  -  25 abr. de 2016</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>26 ene. - 11 feb. de 2016</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>27 may.  - 21 ago. de 2015</li>
                                     </ul>
-                        <span id="readMore">
-                            <h4>Operario de limpieza en SEAT</h4>
-                                <h5>Claro Sol</h5>
+                                </h6>    
+                                    <ul>
+                                        <li>Recogida de huesos en la deshuesadora.</li>
+                                        <li>Limpieza del obrador.</li>
+                                        <li>Pelado de fruta con cuchillo.</li>
+                                    </ul>
+                        <h4>Mozo de almacén</h4>
+                            <h5>Euro Trade Flooring</h5>
+                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras</p>
+                                <h6><i class="icono far fa-calendar-alt fa-lg"></i>25 feb. - 18 mar. de 2016</h6>
+                                    <p>Lijado de lamas adhesivas.</p>
+                        <h4>Manipulador de alimentos de pescados </h4>
+                            <h5>COPESCO & SEFRISA</h5>
+                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras</p>
+                                <h6><i class="icono far fa-calendar-alt fa-lg"></i>23 sept. - 28 dic. de 2015</h6>
+                                    <ul>
+                                        <li>Envasado del pescado.</li>
+                                        <li>Encajado y preparación de palés.</li>
+                                        <li>Etiquetado.</li>
+                                        <li>Pelado del pescado en maquina.</li>
+                                        <li> Corte en maquina.</li>
+                                        <li>Preparación de carros.</li>
+                                    </ul>
+                        <h4>Cajero reponedor</h4>
+                            <h5>Opencor</h5>
+                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i> Martorel</p>
+                                <h6><i class="icono far fa-calendar-alt fa-lg"></i>24 jul. - 30 sept. de 2011</h6>
+                        <h4>Manipulador de alimentos de charcutería </h4>
+                            <h5>Sediasa</h5>
+                                <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Gelida</p>
+                                <h6>
+                                    <ul>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>21 jun. - 26 sept. de 2010</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>4 jun. - 4 sept. de 2009</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>4 jun. - 4 sept. de 2008</li>
+                                        <li><i class="icono far fa-calendar-alt fa-lg"></i>7 jun. - 4 sept. de 2007</li>
+                                    </ul>
+                                </h6>
+                                    <ul>
+                                        <li>Pelado con cuchillo.</li>
+                                        <li>Control informático de las entradas y salidas del embutido en la cámara frigorífica y de congelado.</li>
+                                        <li>Preparación de pedidos en el almacén.</li>
+                                        <li>Corte en maquina.</li>
+                                        <li>Envasado y etiquetado. </li>
+                                    </ul>
+                            <h4>Camarero </h4>
+                                <h5>Bar restaurante El que faltaba</h5>
                                     <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>1 jul. de 2018 - 8 oct. de 2019 </h6>
-                                <h5>Acciona</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
-                                    <h6>
+                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>10 ago. de 2006 - 2 jun. de 2007</h6>
                                         <ul>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>16 sept. de 2017 - 30 jun. de 2018</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>7 ago. - 25 ago. de 2017</li>
+                                            <li>Atención al cliente de camarero de terraza.</li>
+                                            <li>Preparación de cafés.</li>
                                         </ul>
-                                    </h6>
-                                        <ul>
-                                            <li>Limpieza de aseos, vestíbulos e instalaciones.</li>
-                                            <li>Limpieza de oficinas.</li>
-                                            <li>Limpieza de cristales.</li>
-                                            <li>Limpieza técnica de maquinaria industrial.</li>
-                                            <li>Conducción de Fregadora. </li>
-                                            <li>Limpieza industrial de hornos de cera.</li>
-                                            <li>Limpieza de paredes en altura con arnés.</li>
-                                        </ul>
-                            <h4>Mozo de almacén de automoción</h4>
-                                <h5>Schnellecke</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras </p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>3 jul. - 28 jul. de 2017</h6>
-                                        <ul>
-                                            <li>Revisión del código del producto.</li>
-                                            <li>Revisión y colocación de piezas de automoción en cajas y palés. </li>
-                                        </ul>
-                            <h4>Mozo de almacén de cocina en SEAT</h4>
-                                <h5>Serunion</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>10 may. - 31 dic. de 2016 </h6>
-                                        <ul>
-                                            <li>Recibir el genero de los proveedores.</li>
-                                            <li>Control de albaranes.</li>
-                                            <li>Controlar las fechas de caducidad.</li>
-                                            <li>Organización y limpieza del almacén y de las cámaras de frío.</li>
-                                            <li>Dotar a los cocineros de la materia prima.</li>
-                                            <li>Elaboración de inventario.</li>
-                                        </ul>
-                            <h4>Manipulador de alimentos de fruta</h4>
-                                <h5>Nice Fruit</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Castellbisbal</p>
-                                    <h6>
-                                        <ul>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>30 mar.  -  25 abr. de 2016</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>26 ene. - 11 feb. de 2016</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>27 may.  - 21 ago. de 2015</li>
-                                        </ul>
-                                    </h6>    
-                                        <ul>
-                                            <li>Recogida de huesos en la deshuesadora.</li>
-                                            <li>Limpieza del obrador.</li>
-                                            <li>Pelado de fruta con cuchillo.</li>
-                                        </ul>
-                            <h4>Mozo de almacén</h4>
-                                <h5>Euro Trade Flooring</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras</p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>25 feb. - 18 mar. de 2016</h6>
-                                        <p>Lijado de lamas adhesivas.</p>
-                            <h4>Manipulador de alimentos de pescados </h4>
-                                <h5>COPESCO & SEFRISA</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>San Esteban de Sasroviras</p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>23 sept. - 28 dic. de 2015</h6>
-                                        <ul>
-                                            <li>Envasado del pescado.</li>
-                                            <li>Encajado y preparación de palés.</li>
-                                            <li>Etiquetado.</li>
-                                            <li>Pelado del pescado en maquina.</li>
-                                            <li> Corte en maquina.</li>
-                                            <li>Preparación de carros.</li>
-                                        </ul>
-                            <h4>Cajero reponedor</h4>
-                                <h5>Opencor</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i> Martorel</p>
-                                    <h6><i class="icono far fa-calendar-alt fa-lg"></i>24 jul. - 30 sept. de 2011</h6>
-                            <h4>Manipulador de alimentos de charcutería </h4>
-                                <h5>Sediasa</h5>
-                                    <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Gelida</p>
-                                    <h6>
-                                        <ul>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>21 jun. - 26 sept. de 2010</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>4 jun. - 4 sept. de 2009</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>4 jun. - 4 sept. de 2008</li>
-                                            <li><i class="icono far fa-calendar-alt fa-lg"></i>7 jun. - 4 sept. de 2007</li>
-                                        </ul>
-                                    </h6>
-                                        <ul>
-                                            <li>Pelado con cuchillo.</li>
-                                            <li>Control informático de las entradas y salidas del embutido en la cámara frigorífica y de congelado.</li>
-                                            <li>Preparación de pedidos en el almacén.</li>
-                                            <li>Corte en maquina.</li>
-                                            <li>Envasado y etiquetado. </li>
-                                        </ul>
-                                <h4>Camarero </h4>
-                                    <h5>Bar restaurante El que faltaba</h5>
-                                        <p class=lugar><br/><i class="icono-lugar fas fa-map-marker-alt fa-lg"></i>Martorel</p>
-                                        <h6><i class="icono far fa-calendar-alt fa-lg"></i>10 ago. de 2006 - 2 jun. de 2007</h6>
-                                            <ul>
-                                                <li>Atención al cliente de camarero de terraza.</li>
-                                                <li>Preparación de cafés.</li>
-                                            </ul>
-                        </span>
-                            <button type="button" class="btn btn-primary" id="readmore-button">...Mostrar más experiencias <i class="icono-readmore fas fa-angle-down fa-lg"></i></button>
+                    </span>
+                    <!-- Fin Zona de texto oculta -->
+                        <button type="button" class="btn btn-primary" id="readmore-button">...Mostrar más experiencias <i class="icono-readmore fas fa-angle-down fa-lg"></i></button>
+            
+            </main>
+            <!-- Fin Contenido Principal - main -->
+            <!-- Inicio Zona lateral - aside - .sidebar-->
+            <aside class="sidebar">
+                <!-- Inicio Redes sociales -->
+                <article id="datos">
+                    <div class="redes-container">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/victorlh" id="linkedin" target="_blank" title="Perfil de Linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                            <li><a href="http://www.infojobs.net/victor-lopez-hoyo.prf" id="infojobs" target="_blank" title="Perfil de InfoJobs"><img src="img/ij.svg" id="ij"/></a></li>
+                            <li><a href="https://api.whatsapp.com/send?phone=34691474758" id="whatsapp" target="_blank" title="Enviar un Whatsapp"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                            <li><a href="mailto:vicoslc@hotmail.com" id="mail" title="Enviar un e-mail"><i class="far fa-envelope fa-lg"></i></a></li>
+                        </ul>
+                    </div>
                 </article>
+                <!-- Fin Redes sociales -->
                 <article>
                     <h3 id="educacion">Educación</h3>
                         <ul>
@@ -181,27 +229,207 @@
                         </ul>
                 </article>
                 <article>
-                    <h3 id="idiomas">Idiomas</h3>
-                        <ul>
-                            <li>Español: nativo</li>
-                            <li>Catalan: nativo</li>
-                            <li>Ingles: básico</li>
-                        </ul>
+                    <h3>Habilidades adquiridas</h3>
+                    <ul id="conocimientos">
+                        <li class="conocimiento">Lavandería</li>
+                        <li class="conocimiento">Limpieza</li>
+                        <li class="conocimiento">Productos de limpieza</li>
+                        <li class="conocimiento">Limpieza técnica</li>
+                        <li class="conocimiento">Almacén</li>
+                        <li class="conocimiento">Encajado</li>
+                        <li class="conocimiento">Manipulación de alimentos</li>
+                        <li class="conocimiento">Envasado</li>
+                        <li class="conocimiento">Pelado con cuchillo</li>
+                        <li class="conocimiento">Corte mecánico </li> 
+                        <li class="conocimiento">Cadena de producción </li>
+                    </ul>
                 </article>
                 <article>
                     <h3 id="otros">Otros datos de interés</h3>
-                        <p>Permiso de conducir B.</p>
+                        <p>Carnet de conducir B.</p>
                         <p>Disposición de incorporación.</p>
                 </article>
-                <footer>
-                    <p>© Copyright 2020. All Rights Reserved.</p>
-                </footer>
-            </div>
-        </section>
+            </aside> 
+            <!-- Fin Zona lateral - aside - .sidebar-->
+        </div>
+        <!-- Fin del contenedorContenido -->
+        <!-- Inicio widget-1 -->
+        <div class="widget-1 animacionRevelar">
+            <h3 id="ofimatica">Ofimática</h3>
+            <div class="contenedorBarras">
+                <h4>Microsoft Word</h4>
+                <div class="barra">
+                    <div id="word" class="skills word"></div>
+                </div>
         
-        <script src="jquery/jquery.min.js"></script>
-        <script src="headroom/js/headroom.min.js"></script>
-        <script src="headroom/js/menu.js"></script>
-        <script src="js/readmore.js"></script>
-    </body>
+                <h4>Microsoft Excel</h4>
+                <div class="barra">
+                    <div id="excel" class="skills excel"></div>
+                </div>
+        
+                <h4>Microsoft Outlook</h4>
+                <div class="barra">
+                    <div id="outlook" class="skills outlook"></div>
+                </div>
+        
+                <h4>Adobe InDesign</h4>
+                <div class="barra">
+                    <div id="indesign" class="skills indesign"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin widget-1 -->
+        <!-- Inicio widget-2 -->
+        <div class="widget-2 animacionRevelar">
+            <h3 id="idiomas">Idiomas</h3>
+            <div class="contenedorBarras">
+                <h4>Español</h4>
+                <div class="barra">
+                    <div id="espanol" class="skills espanol"></div>
+                </div>
+                <h4>Catalan</h4>
+                <div class="barra">
+                    <div id="catalan" class="skills catalan"></div>
+                </div>                   
+                <h4>Ingles</h4>
+                <div class="barra">
+                    <div id="ingles" class="skills ingles"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin widget-2 -->
+        <!-- Inicio widget-3 -->
+        <div class="widget-3 animacionRevelar">
+            <!-- Referencias -->
+            <div class="containerRef">
+                <a name="referencias"></a>
+                <div class="tituloRef">
+                   <div class="tituloReferencias">
+                        <h3>Referencias</h3>
+                    </div> 
+                </div> 
+                <input type="radio" name="slidesRef" id="radioRef1" class="radioRef" checked>
+                <input type="radio" name="slidesRef" id="radioRef2" class="radioRef">
+                <input type="radio" name="slidesRef" id="radioRef3" class="radioRef">
+                <ul class="slidesRef">
+                    <li class="slideRef">
+                        <div>
+                            <div class="recomendacion">
+                                <q>Víctor es una persona seria, responsable y diligente con 
+                                    cualquier tarea que se le encomienda. Cabe destacar su 
+                                    resolución y disposición al trabajo de manera autónoma. 
+                                    El periodo que estuvo en la compañía desarrolló las funciones 
+                                    de limpieza Ordinaria y Técnica en las instalaciones de montajes 
+                                    de la Factoría Seat Martorell.
+
+                                    Recomiendo que tengan a Victor en cuenta para futuros proyectos.</q>
+                            </div>
+                            <span class="autor">
+                                <!-- <i class="fas fa-user-tie"></i> -->
+                                Jefe supervisor
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slideRef">
+                        <div>
+                            <div class="recomendacion">
+                                <q>Buen trabajador.</q>
+                            </div>
+                            <span class="autor">
+                                <!-- <i class="fas fa-user-tie"></i> -->
+                                Operario
+                            </span>
+                        </div>
+                    </li>
+                    <li class="slideRef">
+                        <div>
+                            <div class="recomendacion">
+                                <q>Víctor López Hoyo es una persona con un alto grado de implicación 
+                                    y una marcada proactividad. Constante y perspicaz, no tiene ningún 
+                                    problema en cumplir con las normas o reglas que se puedan marcar en 
+                                    cada momento.</q>
+                            </div>
+                            <span class="autor">
+                                <!-- <i class="fas fa-user-tie"></i> -->
+                                Jefe supervisor
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="navigationRef">
+                    <label for="radioRef1" id="radioRefSelect1"></label>
+                    <label for="radioRef2" id="radioRefSelect2"></label>
+                    <label for="radioRef3" id="radioRefSelect3"></label>
+                </div>
+            </div>
+            <!-- Fin Referencias -->
+        </div>
+        <!-- Fin Inicio widget-3 -->
+        <!-- Inicio Contacto -->
+        <div class="contacto">
+            <a name="contacto"></a>
+            <div class="tituloContacto animacionRevelar">
+                <h3>Contacto</h3>
+            </div>
+            <div class="contenidoContacto">
+                <a href="https://goo.gl/maps/jCdxvPB4iYmqxTC8A" class="card animacionRevelar" target="_blank">
+                    <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                    <h4>Dirección</h4>
+                    <span>Alcántara, Barcelona</span>
+                    </div>
+                </a>
+                <a href="tel:+34691474758" class="card animacionRevelar">
+                    <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                    <h4>Teléfono</h4>
+                    <span>+34 691 474 758</span>
+                    </div>
+                </a>
+                <a href="mailto:vicoslc@hotmail.com" class="card animacionRevelar">
+                    <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                    <h4>Email</h4>
+                    <span>vicoslc@hotmail.com</span>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+        <!-- Fin contacto -->
+        <footer class="footer">
+            <!-- Inicio Redes sociales -->
+            <article id="datos">
+                <div class="redes-container">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/victorlh" id="linkedin" target="_blank" title="Perfil de Linkedin"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                        <li><a href="http://www.infojobs.net/victor-lopez-hoyo.prf" id="infojobs" target="_blank" title="Perfil de InfoJobs"><img src="img/ij.svg" id="ij"/></a></li>
+                    </ul>
+                </div>
+            </article>
+            <!-- Fin Redes sociales -->
+            <span class="footer-title">Víctor <strong>López</strong></span>
+            <p>© Copyright 2021. All Rights Reserved.</p>
+        </footer>
+    </div>
+        <!--Boton de ir hacia arriba-->
+        <div id='botonSubir'>
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <!--Fin Boton de ir hacia arriba-->
+    
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/readmore.js"></script>
+    <script src="js/referencias.js"></script>
+    <script src="js/skillBar.js"></script>
+    <script src="js/botonSubir.js"></script>
+    <script src="js/efectoRevelar.js"></script>
+</body>
 </html>

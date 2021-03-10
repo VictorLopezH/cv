@@ -1,0 +1,126 @@
+/* MENU --------------------------------------------------*/
+.menu-btn{
+    display: none;
+}
+nav{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 3em;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  #menu{
+      background: rgba(26, 27, 48, 0.5);
+  }
+  nav.sticky{
+    background: #4357ad;
+    padding: 10px 200px;
+  }
+  
+  nav .brand{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  nav .navigation{
+    position: relative;
+  }
+  
+  nav .navigation a{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    padding:1em;
+  }
+  
+  nav .navigation a:hover{
+    background: white;
+    color: #4357ad;
+  }
+  
+  nav.sticky .navigation a:hover{
+    color: #000;
+  }
+  
+
+
+@media (max-width: 1040px){
+    nav{
+        padding: 12px 20px;  
+    }
+    
+    nav .sticky{
+        padding: 10px 20px;
+    }
+    
+    nav .navigation{
+        display: none;
+    }
+    
+    nav .navigation.active{
+        z-index: 888;
+        position: fixed;
+        background: rgba(67, 87, 173, 0.97);
+        top: 0;
+        right: 0;
+        width: 360px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+        transition: 0.3s ease;
+       
+    }
+    
+    nav .navigation a{
+        color: #fff;
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 5px 20px;
+        border-radius: 20px;
+    }
+    
+    nav .navigation a:hover{
+        background: #1f294e;
+        color: #fff;
+        transition: 0.3s ease;
+    }
+    nav .navigation a:active{
+      background: #1f294e;
+      color: #fff;
+      transition: 0.3s ease;
+  }
+    .menu-btn{
+        display: inline;
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+        margin-top: 5px;
+    }
+    
+    .menu-btn.active{
+        z-index: 999;
+        filter: invert(1);
+    }
+      
+}
+  
+@media screen and (max-width: 400px){
+  nav .navigation.active{
+    width: 100%;
+  }
+}

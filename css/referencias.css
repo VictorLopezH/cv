@@ -1,0 +1,175 @@
+/*-- Estilos de testimonios carrousel --*/
+
+.containerRef{
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 3em;
+    position: relative;
+    text-align: center;
+    padding: 2em 0;
+    overflow: hidden;
+}
+.containerRef .tituloRef{
+    display:flex;
+    justify-content: center;
+}
+.containerRef .tituloRef .tituloReferencias{
+    width: 300px;
+    height: content;
+    border-bottom: solid 3px #4357ad;
+    margin-bottom: 30px; 
+}
+.containerRef h3{
+    border-bottom: transparent;
+}
+
+.containerRef .slidesRef{
+    width: 400%;
+    left: 0;
+    padding-left: 0;
+    padding-top: 20px;
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    transition: all 3s ;
+}
+
+.slidesRef li{
+    width: 25%;
+    position: relative;
+    float: left;
+}
+.containerRef li p{
+    margin-top: 0;
+}
+.containerRef li q{
+    max-width: 90%;
+    margin: auto;
+    color: #555353;
+    font-size: 20px;
+    font-weight:normal;
+}
+.recomendacion{
+    position: relative;
+    width: auto;
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    padding: 0px;
+    display:inline-block;
+    font-style: oblique; 
+}
+/* Dobles comillas de fontAwesome */         
+.recomendacion q::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10d";
+    position: absolute;
+    left:-35px;
+    top: -35px;
+    font-size: 35px;
+    color: #4357ad;
+}
+.recomendacion q::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    right:-28px;
+    bottom: -34px;
+    font-size: 35px;
+    color: #4357ad;
+}
+/*-------------------------------*/
+.containerRef i{
+    font-size: 60px;
+    color: black;
+    width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.containerRef li span.autor{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    color: #777777;
+    display: block;
+}
+.navigationRef{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: 40px;
+    position: absolute;
+    width: 104px;
+    left: 50%;
+    margin-left: -52px;
+}
+.containerRef input{
+    display: none;
+}
+.navigationRef label{
+    float: left;
+    margin: 6px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid 2px #9e9e9e;
+    background: #D2D7D3;
+}
+#radioRef1:checked ~ .slidesRef{
+    transform: translateX(0%);
+}
+#radioRef2:checked ~ .slidesRef{ 
+    transform: translateX(-25%);   
+}
+#radioRef3:checked ~ .slidesRef{
+    transform: translateX(-50%);
+}
+.navigationRef label:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+#radioRef1:checked ~ .navigationRef label#radioRefSelect1, 
+#radioRef2:checked ~ .navigationRef label#radioRefSelect2, 
+#radioRef3:checked ~ .navigationRef label#radioRefSelect3{
+    background: #4357ad;
+    border-color: #4357ad;
+}
+
+@media screen and (max-width: 480px){
+    .containerRef li p{
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .recomendacion{
+        margin-left:50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .recomendacion q::before{
+        font-size: 30px;
+        left:-30px;
+        top: -30px;
+    }
+    .recomendacion q::after{
+        font-size: 30px;
+        right:-25px;
+        bottom: -30px;
+    }
+    .containerRef li q{
+        font-size: 1em;
+    }
+    .containerRef li i{
+        width: 2em;
+        margin-left: -1em;
+        margin-right: 0.25em;
+    }
+    .containerRef h2{
+        font-size: 20px;
+    }
+}
