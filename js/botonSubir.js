@@ -7,7 +7,7 @@ function subir(){
 var scrollActual = document.documentElement.scrollTop;
 
     if (scrollActual > 0){
-        window.scrollTo (0, scrollActual - scrollActual);
+        window.scrollTo (0, 0);
         botonSubir.style.transform = "scale(0)";
     }
 }
