@@ -7,8 +7,7 @@ function subir(){
 var scrollActual = document.documentElement.scrollTop;
 
     if (scrollActual > 0){
-        window.requestAnimationFrame(subir);
-        window.scrollTo (0, scrollActual - (scrollActual / 1.5));
+        window.scrollTo (0, scrollActual - scrollActual);
         botonSubir.style.transform = "scale(0)";
     }
 }
