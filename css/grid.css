@@ -230,7 +230,9 @@ body{
         height: 310px;
         margin-right: 0;
     }
-    
+    .container-liniadetiempo {
+        width: 100%;
+    }
  }
  @media screen and (max-width: 800px) and (max-height: 850px){
      .context{
