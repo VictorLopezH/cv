@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+.container-liniadetiempo {
+  max-width: 1024px;
+  width: 90%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-left: 10%;
+}
+
+.container-liniadetiempo h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7rem;
+}
+
+.timeline-item {
+  padding: 1em 2em 1em;
+  position: relative;
+  color: black;
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+  padding-top: 0em;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -8px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.ultimo-readMore {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
+     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#readmore-button {
+  margin-left: 9em;
+}
+/*# sourceMappingURL=liniadetiempo.css.map */
