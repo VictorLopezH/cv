@@ -8,7 +8,7 @@
 }
 
 .container-liniadetiempo h4 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.7rem;
   margin-top: 0em;
 }
@@ -20,7 +20,6 @@
   border-left: 2px solid rgba(0, 0, 0, 0.3);
   padding-top: 0em;
 }
-
 .timeline-item::after {
   width: 10px;
   height: 10px;
@@ -29,21 +28,16 @@
   position: absolute;
   left: -8px;
   border-radius: 10px;
-  content: '';
+  content: "";
   border: 2px solid rgba(0, 0, 0, 0.3);
   background: white;
 }
-
 .timeline-item:last-child {
-  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .ultimo-readMore {
-  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
-     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%;
-     border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 #readmore-button {
@@ -54,8 +48,8 @@
   .container-liniadetiempo {
     margin-left: 0em;
   }
+
   #readmore-button {
     margin-left: 10%;
   }
 }
-/*# sourceMappingURL=liniadetiempo.css.map */

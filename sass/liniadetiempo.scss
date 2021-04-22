@@ -10,6 +10,7 @@
 .container-liniadetiempo h4{
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.7rem;
+	margin-top: 0em;
 }
 
 $border-color: rgba(black, .3);
@@ -51,4 +52,12 @@ $border-color: rgba(black, .3);
 }
 #readmore-button{
 	margin-left: 20%;
+}
+@media screen and (max-width: 800px){
+	.container-liniadetiempo {
+		margin-left: 0em;
+	}
+	#readmore-button{
+		margin-left: 10%;
+	}
 }
