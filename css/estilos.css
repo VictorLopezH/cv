@@ -48,7 +48,6 @@ h2{
     font-weight: 600;
     font-style: oblique;
     color: #4357ad;
-    transition: 5s ease;
 }
 #sabermas{
     display: inline-block;
@@ -64,7 +63,6 @@ h2{
     border:none;
     border-radius: 0.4em;
     cursor: pointer;
-    transition: 0.5s ease;
 }
 #sabermas:hover{
     background: #303e7c;
@@ -85,6 +83,7 @@ h4{
     margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
+
 h5{
     color: #333;
     display: inline;
